@@ -35,4 +35,4 @@ if P is not None:
 		with e:f='normal'if B>=0 else'inverse';A.metric(label='➕ Heures Complémentaires',value=f"{B:.2f} HETP",delta=f"{Q:.2f} HETD",delta_color=f)
 		if B>0:M=39.01;F=43.5;N=F/1.5;O=min(200,B)*M+max(0,B-200)*N;g=O/F;A.markdown('#### Rémunération');A.success(f"\n            **Rémunération attendue  : {O:.2f} €**, *soit l'équivalent de **{g:.2f} HETD** (sur la base de {F:.2f}€ / heure de TD universitaire).*\n            ")
 	except Exception as h:A.error(f"Erreur lors de la lecture du fichier : {h}")
-else:A.info('💡 Veuillez importer un fichier CSV pour afficher les tableaux.')
+else:A.info('💡 Dans Edutime, choisir "Mes Services", sélectionner "Réalisé", "Cette année universitaire", cliquer sur "Appliquer les filtres", puis "Exporter". Utiliser le fichier csv résultant dans cette micro-appli.')
